@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2>Study Contents</h2>
+        <table>
+            <tr>
+                <th>Content</th>
+                <th>Link</th>
+            </tr>
+            {% for content in study_contents %}
+                <tr>
+                    <td>{{ content.content }}</td>
+                    <td><a href="{{ content.link }}" target="_blank">Link</a></td>
+                </tr>
+            {% endfor %}
+        </table>
+        <br><br>
+        <form action="/logout" method="get">
+            <button type="submit">Logout</button>
+        </form>
+    </div>
+</body>
+</html>
