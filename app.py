@@ -29,9 +29,18 @@ def dashboard():
     if not session.get('authenticated'):
         return redirect('/')
     study_contents = [
-        {'content': 'priority 1', 'link': 'https://drive.google.com/file/d/1WuZXPkpVmTVO5cEsfjEpqHT9Ihy1tw45/view?usp=drive_link'},
-        {'content': 'priority 2', 'link': 'https://drive.google.com/file/d/1vLTpeHZB1j-V4vC08_kLpm8gHtp_tMAr/view?usp=drive_link'},
-        {'content': 'priority 3', 'link': 'https://drive.google.com/file/d/1IpbsFPWONYNeHSmkYMg1zERY4nYGjK0x/view?usp=drive_link'}
+        {'content': 'CAD DUMPS 1', 'link': 'https://drive.google.com/file/d/12Uugn8oIw5ZBv0Ly50KXFxtb_UfGDC-g/view?usp=drive_link'},
+        {'content': 'CAD 4', 'link': 'https://drive.google.com/file/d/1-wcR8K2VTAs65fid1zQMBbjmgp3c-fmQ/view?usp=drive_link'},
+        {'content': 'CAD 6', 'link': 'https://drive.google.com/file/d/1GZqEZob1SU2bObmtXXsFocd0ODWubnnb/view?usp=drive_link'},
+        {'content': 'CAD 6(1)', 'link': 'https://drive.google.com/file/d/1GZqEZob1SU2bObmtXXsFocd0ODWubnnb/view?usp=drive_link'},
+        {'content': 'CAD 8', 'link': 'https://drive.google.com/file/d/1ZqB8_LiC5N1VkhU4HItgbjIN_eMDeow4/view?usp=drive_link'},
+        {'content': 'CAD ASKED IN EXAM PREV', 'link': 'https://drive.google.com/file/d/1VgxCKqeOkA5IZIYdI9pcd4GQ3h9KD4GN/view?usp=drive_link'},
+        {'content': 'CAD IMP', 'link': 'https://drive.google.com/file/d/1HFSZKcHZQcJ3F3m_J97lwcb97OJccdY6/view?usp=drive_link'},
+        {'content': 'CAD (1)', 'link': 'https://drive.google.com/file/d/1hQ39jDKL3KCdZQdKn0oYbHapKCVn6-ZA/view?usp=drive_link'},
+        {'content': 'CAD MARKED PRACTICE 1', 'link': 'https://drive.google.com/file/d/18X022y99oCb3K6Lyr3uUsP8qX1KjIucu/view?usp=drive_link'},
+        {'content': 'CAD (1)', 'link': 'https://drive.google.com/file/d/12XlnXTX_ViPbuvbRFc7kxx5iaOff6XPH/view?usp=drive_link'},
+
+
         # Add more study contents as needed
     ]
     return render_template('dashboard.html', study_contents=study_contents)
